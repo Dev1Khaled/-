@@ -105,7 +105,7 @@ yarn build
 لإضافة صورك الخاصة:
 
 1. احفظ الصور في `/home/ubuntu/webdev-static-assets/`
-2. استخدم الأداة: `manus-upload-file --webdev path/to/image.png`
+2. استخدم الأداة: `smart_kh --webdev path/to/image.png`
 3. استخدم الرابط المُرجع في الكود
 
 ## 📂 هيكل المشروع
@@ -205,8 +205,8 @@ netlify deploy --prod --dir=dist
 
 **خالد عزالدين**
 
-- البريد الإلكتروني: khaled@example.com
-- GitHub: [@khaled](https://github.com)
+- البريد الإلكتروني:tgdev1khalid.dev@gmail.com‏
+- GitHub: [dev1khaled](https://github.com)
 - LinkedIn: [خالد عزالدين](https://linkedin.com)
 
 ## 🤝 المساهمة
@@ -217,8 +217,8 @@ netlify deploy --prod --dir=dist
 
 إذا كان لديك أي أسئلة أو اقتراحات، يرجى التواصل عبر:
 
-- البريد الإلكتروني: khaled@example.com
-- GitHub Issues: [أضف مشكلة](https://github.com/yourusername/khaled-portfolio/issues)
+- البريد الإلكتروني: tgdev1khalid.dev@gmail.com‏
+- GitHub Issues: [أضف مشكلة](https://github.com/dev1khaled/khaled-portfolio/issues)
 
 ---
 
