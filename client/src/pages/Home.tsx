@@ -1,3 +1,5 @@
+
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Code, Smartphone, Globe, Mail, Phone, Github, Linkedin } from "lucide-react";
@@ -30,28 +32,32 @@ export default function Home() {
 
   const projects = [
     {
-      title: "تطبيق إدارة المشاريع",
-      description: "تطبيق ويب لإدارة المشاريع والمهام بواجهة سهلة الاستخدام",
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
-      link: "#",
-    },
-    {
       title: "متجر إلكتروني",
       description: "موقع تجارة إلكترونية كامل مع نظام الدفع المتكامل",
       technologies: ["React", "Node.js", "MongoDB"],
       link: "#",
+      image: "ecommerce-project.jpg",
+    },
+    {
+      title: "تطبيق إدارة المشاريع",
+      description: "تطبيق ويب لإدارة المشاريع والمهام بواجهة سهلة الاستخدام",
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      link: "#",
+      image: "project-management.jpg",
     },
     {
       title: "تطبيق الطقس",
       description: "تطبيق يعرض حالة الطقس الحالية والتنبؤات المستقبلية",
       technologies: ["React Native", "API", "Firebase"],
       link: "#",
+      image: "weather-app.jpg",
     },
     {
       title: "منصة التعليم",
       description: "منصة تعليمية توفر دورات برمجية متنوعة وتفاعلية",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       link: "#",
+      image: "education-platform.jpg",
     },
   ];
 
@@ -116,12 +122,14 @@ export default function Home() {
               </h2>
 
               <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663540763570/DH5btRhjBU5LSWaKAT5x2f/skills-illustration-4yyFjuWyZkFvkZ2neqQTnn.webp"
-                    alt="صورة توضيحية"
-                    className="rounded-lg shadow-lg"
-                  />
+                <div className="flex justify-center">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl hover:shadow-blue-600/50 transition-shadow">
+                    <img
+                      src="/images/my-photo.png.png"
+                      alt="خالد عزالدين"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
 
                 <div className="space-y-6">
@@ -221,8 +229,18 @@ export default function Home() {
                   key={index}
                   className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
-                    <Globe className="w-16 h-16 text-white opacity-50" />
+                  <div 
+                    className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center relative overflow-hidden"
+                    style={{
+                      backgroundImage: `url(/images/${project.image || 'default-project.jpg'})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+                    <div className="relative z-10">
+                      <Globe className="w-16 h-16 text-white opacity-70" />
+                    </div>
                   </div>
 
                   <div className="p-6">
@@ -287,10 +305,10 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">رقم الهاتف</h3>
                     <a
-                      href="tel:+967717371160"
+                      href="tel:717371160"
                       className="text-blue-700 hover:text-blue-800 transition-colors"
                     >
-                      967717371160+
+                      717371160
                     </a>
                   </div>
                 </div>
@@ -306,7 +324,7 @@ export default function Home() {
                     type="text"
                     id="name"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                    placeholder="أدخل إسمك"
+                    placeholder="أدخل اسمك"
                   />
                 </div>
 
