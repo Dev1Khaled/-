@@ -216,10 +216,12 @@ netlify deploy --prod --dir=dist
 ## 📞 التواصل والدعم
 
 إذا كان لديك أي أسئلة أو اقتراحات، يرجى التواصل عبر:
-
++967717371160
 - البريد الإلكتروني: tgdev1khalid.dev@gmail.com‏
 - GitHub Issues: [أضف مشكلة](https://github.com/dev1khaled/khaled-portfolio/issues)
-
+- tiktok.com/@khaled.ezzeldin.hassan.s
+- https://www.instagram.com/developer_khaled1?igsh=Y3hlMWl1NDRidHNh
+- https://www.facebook.com/share/1GhYF6CvSJ/
 ---
 
 **تم بناء هذا الموقع بـ ❤️ باستخدام React و Tailwind CSS**
