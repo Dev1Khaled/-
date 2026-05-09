@@ -1,8 +1,7 @@
-
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { ArrowRight, Code, Smartphone, Globe, Mail, Phone, Github, Linkedin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { ArrowRight, Code, Smartphone, Globe, Mail, Phone, Github, Linkedin, Instagram, Music } from "lucide-react";
+import { Button } from "../components/ui/button";
 
 export default function Home() {
   const skills = [
@@ -31,32 +30,32 @@ export default function Home() {
 
   const projects = [
     {
-      title: "متجر إلكتروني",
-      description: "موقع تجارة إلكترونية كامل مع نظام الدفع المتكامل",
-      technologies: ["React", "Node.js", "MongoDB"],
-      link: "#",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
-    },
-    {
       title: "تطبيق إدارة المشاريع",
       description: "تطبيق ويب لإدارة المشاريع والمهام بواجهة سهلة الاستخدام",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       link: "#",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+      image: "project-management.png",
+    },
+    {
+      title: "متجر إلكتروني",
+      description: "موقع تجارة إلكترونية كامل مع نظام الدفع المتكامل",
+      technologies: ["React", "Node.js", "MongoDB"],
+      link: "#",
+      image: "ecommerce.png",
     },
     {
       title: "تطبيق الطقس",
       description: "تطبيق يعرض حالة الطقس الحالية والتنبؤات المستقبلية",
       technologies: ["React Native", "API", "Firebase"],
       link: "#",
-      image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=600&h=400&fit=crop",
+      image: "weather-app.png",
     },
     {
       title: "منصة التعليم",
       description: "منصة تعليمية توفر دورات برمجية متنوعة وتفاعلية",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       link: "#",
-      image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop",
+      image: "education.png",
     },
   ];
 
@@ -122,11 +121,11 @@ export default function Home() {
 
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="flex justify-center">
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl hover:shadow-blue-600/50 transition-shadow">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl">
                     <img
                       src="/images/my-photo.png.png"
                       alt="خالد عزالدين"
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
@@ -228,17 +227,12 @@ export default function Home() {
                   className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300"
                 >
                   <div 
-                    className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center relative overflow-hidden"
+                    className="h-48 bg-cover bg-center relative overflow-hidden"
                     style={{
-                      backgroundImage: `url(${project.image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
+                      backgroundImage: `url('/images/${project.image}')`,
                     }}
                   >
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
-                    <div className="relative z-10">
-                      <Globe className="w-16 h-16 text-white opacity-70" />
-                    </div>
+                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
                   </div>
 
                   <div className="p-6">
@@ -287,10 +281,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
-                    <a
-                      href="mailto:tgdev1khalid.dev@gmail.com‏"
-                      className="text-blue-700 hover:text-blue-800 transition-colors"
-                    >
+                    <a href="mailto:tgdev1khalid.dev@gmail.com‏" className="text-blue-700 hover:underline">
                       tgdev1khalid.dev@gmail.com‏
                     </a>
                   </div>
@@ -302,18 +293,14 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">رقم الهاتف</h3>
-                    <a
-                      href="tel:717371160"
-                      className="text-blue-700 hover:text-blue-800 transition-colors"
-                    >
-                      717371160
+                    <a href="tel:+967717371160" className="text-blue-700 hover:underline">
+                      967717371160+
                     </a>
                   </div>
                 </div>
               </div>
 
-              {/* Contact Form */}
-              <form className="space-y-6 bg-gray-50 p-8 rounded-xl border border-gray-200">
+              <form className="space-y-6 bg-gray-50 p-8 rounded-xl">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
                     الاسم
@@ -356,13 +343,14 @@ export default function Home() {
               </form>
 
               {/* Social Links */}
-              <div className="mt-12 flex justify-center gap-6">
+              <div className="mt-12 flex justify-center gap-4 flex-wrap">
                 <a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300"
+                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                   aria-label="GitHub"
+                  title="زيارة GitHub"
                 >
                   <Github className="w-6 h-6" />
                 </a>
@@ -370,10 +358,31 @@ export default function Home() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300"
+                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                   aria-label="LinkedIn"
+                  title="زيارة LinkedIn"
                 >
                   <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://tiktok.com/@khaled.ezzeldin.hassan.s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-black text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  aria-label="TikTok"
+                  title="تابعني على TikTok"
+                >
+                  <Music className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://instagram.com/developer_khaled1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-gray-100 hover:bg-pink-600 text-gray-700 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  aria-label="Instagram"
+                  title="تابعني على Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
                 </a>
               </div>
             </div>

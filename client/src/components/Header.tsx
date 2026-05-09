@@ -1,5 +1,6 @@
+
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Music } from "lucide-react";
 import { useState } from "react";
 
 export default function Header() {
@@ -37,6 +38,32 @@ export default function Header() {
             ))}
           </nav>
 
+          {/* Social Media Icons */}
+          <div className="hidden md:flex items-center gap-3">
+            {/* TikTok */}
+            <a
+              href="https://tiktok.com/@khaled.ezzeldin.hassan.s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg transition-all duration-300 transform hover:scale-110"
+              aria-label="TikTok"
+              title="تابعني على TikTok"
+            >
+              <Music className="w-5 h-5" />
+            </a>
+            {/* Instagram */}
+            <a
+              href="https://instagram.com/developer_khaled1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-gray-600 hover:text-pink-600 hover:bg-gray-100 rounded-lg transition-all duration-300 transform hover:scale-110"
+              aria-label="Instagram"
+              title="تابعني على Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+          </div>
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -64,6 +91,27 @@ export default function Header() {
                 {link.name}
               </a>
             ))}
+            {/* Mobile Social Media Icons */}
+            <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+              <a
+                href="https://tiktok.com/@khaled.ezzeldin.hassan.s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg transition-all duration-300"
+                aria-label="TikTok"
+              >
+                <Music className="w-5 h-5" />
+              </a>
+              <a
+                href="https://instagram.com/developer_khaled1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-gray-600 hover:text-pink-600 hover:bg-gray-100 rounded-lg transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
           </nav>
         )}
       </div>
