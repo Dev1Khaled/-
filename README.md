@@ -219,9 +219,9 @@ netlify deploy --prod --dir=dist
 +967717371160
 - البريد الإلكتروني: tgdev1khalid.dev@gmail.com‏
 - GitHub Issues: [أضف مشكلة](https://github.com/dev1khaled/khaled-portfolio/issues)
-- tiktok.com/@khaled.ezzeldin.hassan.s
-- https://www.instagram.com/developer_khaled1?igsh=Y3hlMWl1NDRidHNh
-- https://www.facebook.com/share/1GhYF6CvSJ/
+- حسابي تيك توك:https://www.tiktok.com/@khaled.ezzeldin.hassan.s
+- حسابي انستجرام:https://www.instagram.com/developer_khaled1?igsh=Y3hlMWl1NDRidHNh
+- حسابي فيسبوك:https://www.facebook.com/share/1GhYF6CvSJ/
 ---
 
 **تم بناء هذا الموقع بـ ❤️ باستخدام React و Tailwind CSS**
