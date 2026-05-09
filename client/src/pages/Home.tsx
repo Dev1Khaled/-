@@ -1,5 +1,4 @@
 
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Code, Smartphone, Globe, Mail, Phone, Github, Linkedin } from "lucide-react";
@@ -36,28 +35,28 @@ export default function Home() {
       description: "موقع تجارة إلكترونية كامل مع نظام الدفع المتكامل",
       technologies: ["React", "Node.js", "MongoDB"],
       link: "#",
-      image: "ecommerce-project.jpg",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
     },
     {
       title: "تطبيق إدارة المشاريع",
       description: "تطبيق ويب لإدارة المشاريع والمهام بواجهة سهلة الاستخدام",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       link: "#",
-      image: "project-management.jpg",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
     },
     {
       title: "تطبيق الطقس",
       description: "تطبيق يعرض حالة الطقس الحالية والتنبؤات المستقبلية",
       technologies: ["React Native", "API", "Firebase"],
       link: "#",
-      image: "weather-app.jpg",
+      image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=600&h=400&fit=crop",
     },
     {
       title: "منصة التعليم",
       description: "منصة تعليمية توفر دورات برمجية متنوعة وتفاعلية",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       link: "#",
-      image: "education-platform.jpg",
+      image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop",
     },
   ];
 
@@ -194,7 +193,6 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  "++C",
                   "React",
                   "TypeScript",
                   "JavaScript",
@@ -232,7 +230,7 @@ export default function Home() {
                   <div 
                     className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center relative overflow-hidden"
                     style={{
-                      backgroundImage: `url(/images/${project.image || 'default-project.jpg'})`,
+                      backgroundImage: `url(${project.image})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
@@ -290,10 +288,10 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
                     <a
-                      href="mailto:tgdev1khalid.dev@gmail.com"
+                      href="mailto:tgdev1khalid.dev@gmail.com‏"
                       className="text-blue-700 hover:text-blue-800 transition-colors"
                     >
-                      tgdev1khalid.dev@gmail.com
+                      tgdev1khalid.dev@gmail.com‏
                     </a>
                   </div>
                 </div>
