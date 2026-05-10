@@ -123,7 +123,7 @@ export default function Home() {
                 <div className="flex justify-center">
                   <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl">
                     <img
-                      src="/images/my-photo.png.png"
+                      src="/images/khaled.png"
                       alt="خالد عزالدين"
                       className="w-full h-full object-cover"
                     />
@@ -132,7 +132,7 @@ export default function Home() {
 
                 <div className="space-y-6">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    أنا خالد عزالدين، مطور شاب مهتم بالبرمجة وتطوير الويب. أبدأ رحلتي في عالم التكنولوجيا بشغف وتفاني لتعلم أحدث التقنيات والأدوات.
+                    أنا خالد،مطور شاب مهتم بالبرمجة وتطوير الويب. أبدأ رحلتي في عالم التكنولوجيا بشغف وتفاني لتعلم أحدث التقنيات والأدوات.
                   </p>
 
                   <p className="text-lg text-gray-700 leading-relaxed">
