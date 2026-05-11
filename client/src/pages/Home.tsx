@@ -1,7 +1,8 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { ArrowRight, Code, Smartphone, Globe, Mail, Phone, Github, Linkedin, Instagram, Music } from "lucide-react";
-import { Button } from "../components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const skills = [
@@ -132,7 +133,7 @@ export default function Home() {
 
                 <div className="space-y-6">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    أنا خالد،مطور شاب مهتم بالبرمجة وتطوير الويب. أبدأ رحلتي في عالم التكنولوجيا بشغف وتفاني لتعلم أحدث التقنيات والأدوات.
+                    أنا خالد عزالدين، مطور شاب مهتم بالبرمجة وتطوير الويب. أبدأ رحلتي في عالم التكنولوجيا بشغف وتفاني لتعلم أحدث التقنيات والأدوات.
                   </p>
 
                   <p className="text-lg text-gray-700 leading-relaxed">
@@ -192,6 +193,7 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
+                  "++C",
                   "React",
                   "TypeScript",
                   "JavaScript",
@@ -281,7 +283,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
-                    <a href="mailto:tgdev1khalid.dev@gmail.com‏" className="text-blue-700 hover:underline">
+                    <a href="mailto: tgdev1khalid.dev@gmail.com‏" className="text-blue-700 hover:underline">
                       tgdev1khalid.dev@gmail.com‏
                     </a>
                   </div>
@@ -293,8 +295,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">رقم الهاتف</h3>
-                    <a href="tel:+967717371160" className="text-blue-700 hover:underline">
-                      967717371160+
+                    <a href="tel:+967 717 371 160" className="text-blue-700 hover:underline">
+                      967 717 371 160+
                     </a>
                   </div>
                 </div>

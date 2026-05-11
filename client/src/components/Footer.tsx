@@ -1,5 +1,4 @@
 
-
 import { Github, Linkedin, Mail, Instagram, Music } from "lucide-react";
 
 export default function Footer() {

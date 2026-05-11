@@ -1,4 +1,3 @@
-
 import { Link } from "wouter";
 import { Menu, X, Instagram, Music } from "lucide-react";
 import { useState } from "react";

@@ -1,0 +1,11 @@
+# robots.txt - ملف التحكم في زحف محركات البحث
+
+# السماح لجميع محركات البحث بالزحف إلى الموقع
+User-agent: *
+Allow: /
+
+# تحديد موقع Sitemap
+Sitemap: https://khaled-portfolio.vercel.app/sitemap.xml
+
+# وقت الزحف المسموح (اختياري)
+# Crawl-delay: 1
